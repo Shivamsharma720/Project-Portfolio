@@ -62,7 +62,6 @@
     padding: 60px 20px;
     text-align: center;
     max-width: 100%;
-    box-sizing: border-box;
   }
 
   /* Home Section with Animated Gradient */
@@ -231,21 +230,17 @@ body.dark-mode .resume-btn:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 100%;
-    box-sizing: border-box
   }
 
   .project-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 100%;
-    max-width: 300px; 
+    width: 300px;
     padding: 15px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    box-sizing: border-box;
   }
 
   .project-card:hover {
@@ -447,6 +442,7 @@ view-cert-btn {
     font-size: 2rem;
   }
 }
+
 
 
 
