@@ -1,0 +1,355 @@
+  /* Reset + Fonts */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+  }
+
+  /* Navbar */
+  header {
+    background: #222;
+    padding: 15px 20px;
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* ul aur button ke beech thoda gap */
+}
+
+  nav h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #ff6a00;
+  }
+
+  
+
+  /* Sections */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  /* Home Section with Animated Gradient */
+  .home {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #ff6a00, #ff0080);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: white;
+    padding: 100px 20px;
+  }
+
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* 🌙 Dark Mode Styles */
+  body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+  }
+
+  /* Navbar */
+  body.dark-mode header {
+    background: #1e1e1e;
+    color: #fff;
+  }
+
+  body.dark-mode nav ul li a {
+    color: #ddd;
+  }
+
+  body.dark-mode nav ul li a:hover {
+    color: #ff6a00;
+  }
+
+  /* Home Section */
+  body.dark-mode .home {
+    color: #fff;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+  }
+
+  /* Skills Section */
+  body.dark-mode .skills-list li {
+    background: #333;
+    color: #ddd;
+  }
+
+  body.dark-mode .skills-list li:hover {
+    background: #ff6a00;
+    color: #fff;
+  }
+
+  /* Projects Section */
+  body.dark-mode .project-card {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    color: #ddd;
+  }
+
+  body.dark-mode .project-card:hover {
+    background: #2c2c2c;
+    transform: scale(1.05);
+  }
+
+  /* Contact Section */
+  body.dark-mode .contact a {
+    color: #ff9800;
+  }
+
+  body.dark-mode .contact a:hover {
+    color: #ff5722;
+  }
+
+  /* Footer */
+  body.dark-mode footer {
+    background: #1a1a1a;
+    color: #ccc;
+  }
+
+
+  /* Buttons */
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #2575fc, #6a11cb);;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.15);
+  }
+
+  .btn:hover {
+     background: linear-gradient(45deg, #ff6a00, #ee0979);
+     transform: scale(1.05);
+     box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  }
+
+    /* Resume Download Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.resume-btn:hover {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Dark Mode Resume Button */
+body.dark-mode .resume-btn {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .resume-btn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+  /* Skills Section */
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skills-list li {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .skills-list li:hover {
+    background: #ff6a00;
+    color: #fff;
+  }
+
+  /* Projects Section */
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  }
+
+  .project-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Contact Section */
+  .contact a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contact a:hover {
+    color: #ff6a00;
+  }
+
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+/* Typing Effect */
+#typing-text {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white; /* cursor line */
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Dark Mode Cursor */
+body.dark-mode #typing-text {
+  border-right: 3px solid #ff6a00;
+}
+/* 📊 Stats Section */
+#stats {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#stats h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #00ff99;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stat-box {
+  background: #1a1a1a;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 255, 153, 0.3);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ff99;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #ccc;
+}
+view-cert-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.stat-card:hover .view-cert-btn {
+  opacity: 1;
+}
+
