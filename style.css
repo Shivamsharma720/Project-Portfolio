@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; /* left-right scroll band ho */
+}
+
 
   body {
     line-height: 1.6;
@@ -37,6 +43,7 @@
   nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
   }
 
   nav ul li {
@@ -60,7 +67,6 @@
   .section {
     padding: 60px 20px;
     text-align: center;
-    max-width: 100%;
   }
 
   /* Home Section with Animated Gradient */
@@ -235,7 +241,8 @@ body.dark-mode .resume-btn:hover {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 15px;
     text-align: center;
     transition: 0.3s;
@@ -319,7 +326,8 @@ body.dark-mode #typing-text {
   background: #1a1a1a;
   padding: 30px 40px;
   border-radius: 12px;
-  width: 200px;
+  width: 100%;
+  max-width: 220px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -441,9 +449,4 @@ view-cert-btn {
     font-size: 2rem;
   }
 }
-
-
-
-
-
 
